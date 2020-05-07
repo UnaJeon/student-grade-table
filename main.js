@@ -1,4 +1,4 @@
-var header = document.querySelectorAll("header");
+var header = document.querySelector("header");
 var pageHeader = new PageHeader(header);
 var table = document.querySelectorAll(".table")
 var gradetable =new GradeTable(table)
