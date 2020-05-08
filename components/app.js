@@ -38,6 +38,7 @@ class App {
   start(){
     this.getGrades();
     this.gradeForm.onSubmit(this.createGrade);
+    this.gradeTable.onDeleteClick(this.deleteGrade)
   }
   createGrade(name,course,grade){
     console.log(name,course,grade);
