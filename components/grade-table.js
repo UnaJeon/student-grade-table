@@ -18,10 +18,10 @@ class GradeTable{
      //tbody.append(tr);
      tbody.append(this.renderGradeRow(grades[i],this.deleteGrade));
    }
-   if (!grades.length){
-     this.tableElement.className = " ";
+   if (grades.length===0){
+     pElement.classList.remove("d-none");
    }else{
-     this.tableElement.className ='d.none'
+     pElement.className = "d-none";
    }
   }
   onDeleteClick(deleteGrade){
