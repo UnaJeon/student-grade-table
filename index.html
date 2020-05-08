@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body class="container">
   <header class ="row">
          <h1 class ="col-8">Student Grade Table</h1>
          <h3 class="col-4">Average Grade<span class="badge badge-secondary"></span></h3>
   </header>
-  <table class="table table-striped">
+
+  <div class="row">
+   <div class="col-9">
+    <table class="table table-striped">
     <thead>
      <tr>
       <th>Student Name</th>
@@ -21,13 +25,42 @@
     </thead>
     <tbody class ="tbody">
     </tbody>
-  </table>
+    </table>
+    </div>
+
+  <div class="col-3">
+    <h4>Add Grade</h4>
+   <form action="" method="get" >
+    <div class ="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Student Name" name="name" aria-label="Studnet Name" aria-describedby="basic-addon1">
+    </div>
+    <div class ="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon2">@</span>
+      </div>
+      <input type="text" class ="form-control" placeholder="Student Course" name="course" aria-label="Studnet Course" aria-describedby="basic-addon2">
+    </div>
+    <div class ="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">@</span>
+      </div>
+      <input type="number" class ="form-control" placeholder="Student Grade" name="grade" aria-label="Studnet Grade" aria-describedby="basic-addon3">
+    </div>
+    <button type="submit" class="btn btn-success">Add</button>
+    <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+   </form>
+   </div>
+  </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="components/app.js"></script>
     <script src="components/grade-table.js"></script>
     <script src ="components/page-header.js"></script>
+    <script src="components/grade-form.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
